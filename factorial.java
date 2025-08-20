@@ -1,19 +1,19 @@
-public class factorial{
-  public static int findFactorial(int n){
-    int fact=1;
-    for(int i=1;i<=n;i++){
-      fact*=i;
+public class factorial {
+    public static int findFactorial(int n) {
+        int fact = 1;
+        for(int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
     }
-    return fact;
-  }
-  public static void main(string[] args){
-    try{
-    int n=5;
-    int res=findFactorial(n);
-    System.out.println("Factorial of "+ n+" is "+res);
+
+    public static void main(String[] args) {
+        try {
+            int num = 5; // You can change the input
+            int result = findFactorial(num);
+            System.out.println("Factorial of " + num + " is: " + result);
+        } catch(Exception e) {
+            System.out.println("An error occurred: " + e.getMessage());
+        }
     }
-    catch(Exception e){
-      System.out.println("An error occurred: "+e.getMessage());
-    }
-  }
-    
+}
