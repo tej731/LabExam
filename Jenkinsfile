@@ -28,7 +28,7 @@ pipeline{
       stage('Archive JAR'){
         steps{
           echo 'Archiving the JAR file'
-          archiveArifacts arifacts: 'factorial.jar' onlyIfSuccessful:true
+          archiveArifacts arifacts: 'factorial.jar', onlyIfSuccessful:true
         }
       }
     }
